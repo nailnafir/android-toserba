@@ -1,0 +1,12 @@
+package com.nailnafir.toserba.ui.cart
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+
+class CartViewModel : ViewModel() {
+    private val _text = MutableLiveData<String>().apply {
+        value = "HALAMAN KERANJANG"
+    }
+    val text: LiveData<String> = _text
+}
